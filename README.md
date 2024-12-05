@@ -128,7 +128,3 @@ To maintain a clean and professional repository, please follow these guidelines 
 
 - **Provide Context**: Include sufficient documentation in notebooks and scripts to ensure that the methodology is clear to external audiences.
 - **Commit Messages**: Use clear and descriptive commit messages to document changes.
-
----
-
-These guidelines encourage transparency, clarity, and collaboration while maintaining a professional and manageable repository. Let me know if you’d like to refine this further!
