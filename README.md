@@ -79,6 +79,56 @@ For more information, see the full license text in the [LICENSE](LICENSE) file.
 
 We believe transparency is critical, and making these scripts public aligns with our commitment to accountability.
 
-## Contributions
+## Contribution Guidelines
 
 Contributions to improve these scripts or expand their capabilities are welcome. Please submit issues or pull requests via GitHub.
+
+To maintain a clean and professional repository, please follow these guidelines when contributing:
+
+### 1. **Notebooks**
+
+- **Clear Outputs**: Ensure all notebooks (*.ipynb) have their outputs cleared before committing. This minimizes file sizes and avoids unnecessary clutter.
+  - Clear outputs in Jupyter Notebook:
+    ```bash
+    jupyter nbconvert --clear-output --inplace notebook.ipynb
+    ```
+- **Descriptive Titles**: Use meaningful and concise notebook filenames.
+- **Document Your Work**: Include comments and markdown cells to explain your workflow, assumptions, and findings.
+
+### 2. **Data**
+
+- **Avoid Binary Data**: Do not commit large binary datasets (e.g., CSV, Excel, or other raw data files) to the repository.
+  - If datasets are necessary, use a link to an external source or repository (e.g., public datasets on Eurostat or other platforms).
+- **Small Examples Only**: If required, include small sample datasets for demonstration purposes only.
+
+### 3. **Plots and Outputs**
+
+- **Clean Output Directory**: Save plots and figures in a designated `output/` directory and ensure they are relevant to the notebooks/scripts.
+- **Avoid Committing Outputs**: Generally, avoid committing generated plots and outputs unless explicitly required for documentation.
+
+### 4. **Dependencies**
+
+- **Use Virtual Environments**: Always use a virtual environment when developing or testing scripts. Keep dependencies in `requirements.txt`.
+- **Freeze Dependencies**: If you add or update a dependency, regenerate the `requirements.txt` file:
+  ```bash
+  pip freeze > requirements.txt
+  ```
+
+### 5. **Code Quality**
+
+- **Adopt Consistent Styling**: Follow PEP8 for Python scripts. Use tools like `black` or `flake8` to format your code.
+- **Use Modular Code**: Break down complex logic into functions or reusable modules where appropriate.
+
+### 6. **Licensing and Attribution**
+
+- **Respect Data Licenses**: Ensure that all data and scripts comply with applicable licenses.
+- **Acknowledge Sources**: Provide links to data sources or references in your notebook markdown cells.
+
+### 7. **Transparency**
+
+- **Provide Context**: Include sufficient documentation in notebooks and scripts to ensure that the methodology is clear to external audiences.
+- **Commit Messages**: Use clear and descriptive commit messages to document changes.
+
+---
+
+These guidelines encourage transparency, clarity, and collaboration while maintaining a professional and manageable repository. Let me know if you’d like to refine this further!
